@@ -1,0 +1,7 @@
+.container {
+  border: 2px solid #ccc;       /* border */
+  padding: 16px;                /* space inside */
+  margin: 20px;                 /* space outside */
+  border-radius: 8px;           /* rounded corners */
+  background-color: #f9f9f9;    /* light background */
+}

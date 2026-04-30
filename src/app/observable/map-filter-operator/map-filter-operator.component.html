@@ -1,0 +1,13 @@
+<br/>
+<h4>Map filter</h4>
+<button (click)="getData()">Map</button>
+<div *ngFor="let val of data">
+    {{val }}
+    <!-- {{val | json}} -->
+</div>
+<br/>
+<button (click)="getFilteredData()">Filter</button>
+<div *ngFor="let val of filterdata">
+    {{val }}
+    <!-- {{val | json}} -->
+</div>

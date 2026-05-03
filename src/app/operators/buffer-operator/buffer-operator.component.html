@@ -1,0 +1,15 @@
+<h4>Buffer operator</h4>
+<div>
+    <button (click)="startInterval()">Start Interval</button>
+</div>
+<div>
+    <button id="showButton">Show Data Now</button>
+</div>
+
+<div *ngIf="intervalData.length">
+    <div *ngFor="let data of intervalData">{{data}}</div>
+
+</div>
+
+<!-- <app-buffer-count-operator></app-buffer-count-operator> -->
+<!-- <app-buffer-time-operator></app-buffer-time-operator> -->

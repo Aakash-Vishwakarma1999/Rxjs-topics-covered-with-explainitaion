@@ -15,6 +15,18 @@ import { FormsModule } from '@angular/forms';
 import { BehaviorSubjectComponent } from './Subjects/behavior-subject/behavior-subject.component';
 import { ReplaySubjectComponent } from './Subjects/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './Subjects/async-subject/async-subject.component';
+import { WaysToSubscribeToObservableComponent } from './observable/ways-to-subscribe-to-observable/ways-to-subscribe-to-observable.component';
+import { FunctionVSObservablesComponent } from './observable/function-vs-observables/function-vs-observables.component';
+import { UnsubscribingObservableComponent } from './observable/unsubscribing-observable/unsubscribing-observable.component';
+import { AvoidingMemoryLeakageComponent } from './observable/avoiding-memory-leakage/avoiding-memory-leakage.component';
+import { BufferOperatorComponent } from './operators/buffer-operator/buffer-operator.component';
+import { BufferCountOperatorComponent } from './operators/buffer-count-operator/buffer-count-operator.component';
+import { BufferTimeOperatorComponent } from './operators/buffer-time-operator/buffer-time-operator.component';
+import { TakeOperatorComponent } from './operators/take-operator/take-operator.component';
+import { OperatorHomeComponent } from './operators/operator-home/operator-home.component';
+import { provideRoutes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { TakeUntilOperatorComponent } from './operators/take-until-operator/take-until-operator.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +42,23 @@ import { AsyncSubjectComponent } from './Subjects/async-subject/async-subject.co
     ShowTaskComponent,
     BehaviorSubjectComponent,
     ReplaySubjectComponent,
-    AsyncSubjectComponent
+    AsyncSubjectComponent,
+    WaysToSubscribeToObservableComponent,
+    FunctionVSObservablesComponent,
+    UnsubscribingObservableComponent,
+    AvoidingMemoryLeakageComponent,
+    BufferOperatorComponent,
+    BufferCountOperatorComponent,
+    BufferTimeOperatorComponent,
+    TakeOperatorComponent,
+    OperatorHomeComponent,
+    TakeUntilOperatorComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

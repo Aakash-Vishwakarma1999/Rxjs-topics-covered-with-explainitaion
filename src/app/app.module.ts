@@ -27,6 +27,8 @@ import { OperatorHomeComponent } from './operators/operator-home/operator-home.c
 import { provideRoutes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { TakeUntilOperatorComponent } from './operators/take-until-operator/take-until-operator.component';
+import { ThrottleOperatorComponent } from './operators/throttle-operator/throttle-operator.component';
+import { DebounceOperatorComponent } from './operators/debounce-operator/debounce-operator.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { TakeUntilOperatorComponent } from './operators/take-until-operator/take
     BufferTimeOperatorComponent,
     TakeOperatorComponent,
     OperatorHomeComponent,
-    TakeUntilOperatorComponent
+    TakeUntilOperatorComponent,
+    ThrottleOperatorComponent,
+    DebounceOperatorComponent
   ],
   imports: [
     BrowserModule,
